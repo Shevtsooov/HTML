@@ -1,0 +1,384 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(0, 0, 0);
+}
+h1 {
+    font-family: 'Play', sans-serif;
+    font-size: 30px;
+    margin: 0;
+    color: #0f816e;
+}
+
+button {
+    margin: 0 16px;
+    height: 50px;
+    width: 315px;
+    font-size: 24px;
+    background-color: #eb9515;
+    font-family: 'Play', sans-serif;
+    letter-spacing: 3px;
+    color: rgb(247, 243, 243);
+}
+button:active {
+    background-color: rgba(185, 112, 16, 0.979);
+}
+
+#TLD_field {
+    width: 315px;
+    font-size: 22px;
+    padding: 10px;
+    text-align: center;
+    text-transform: lowercase;
+    color: #0f816e;
+}
+
+#TLD_field::selection {
+    background-color: rgb(27, 226, 43);
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px;
+    
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+    width: 670px;
+}
+
+.sorry {
+    color: brown;
+    font-size: 22px;
+    font-family: 'Play', sans-serif;
+    margin-left: 52px;
+}
+
+.output {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 603px;
+    height: 200px;
+    margin-left: 20px;
+    color: #0f816e;
+}
+
+.calculation {
+    font-family: 'Play', sans-serif;
+    font-size: 45px;
+    margin-left: 30px;
+    width: 70%;
+    color: #0f816e;
+}
+
+.result {
+    font-size: 100px;
+    font-family: 'Play', sans-serif;
+    margin-top: 100px;
+    width: 30%;
+    color: #0f816e;
+}
+
+.result::selection {
+    background-color: rgba(66, 71, 88, 0.384);
+    color: #000;
+    
+}
+
+label {
+    margin: 0;
+}
+
+.tiers {
+    border: solid #0f816e; 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+.new {
+    display: flex;
+    flex-direction: column;
+    border: solid #0f816e 1px;
+    align-items: center;
+    justify-content: start;
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: 'Play', sans-serif;
+    width: 83px;
+    font-size: 14px;
+}
+
+.new:hover {
+    background-color: rgb(43, 39, 39);
+}
+
+.canned {
+    position: absolute;
+}
+
+#redCanned,
+#nyirCanned {
+    margin-top: 10px;
+}
+
+#redCanned::selection {
+    background-color: #169782;
+    color: #fff;
+}
+
+#nyirCanned::selection {
+    background-color: #1c9c87;
+    color: #fff;
+}
+
+.myCanned {
+    display: flex;
+    flex-direction: column;
+    color: #0f816e;
+}
+
+.bla {
+    display: flex;
+    flex-direction: row;
+}
+
+.bla2 {
+    margin-left: 20px;
+}
+
+textarea {
+    margin-left: 53px;
+    padding: 15px;
+    font-size: 14px;
+    width: 646px;
+    height: 150px;
+    margin-top: 20px;
+    color: #0f816e;
+}
+
+h3 {
+    margin: 0;
+    color: #0f816e;
+}
+
+.area {
+    margin: 0;
+    width: 646px;
+    height: 105px;
+    color: #0f816e;
+}
+
+.newdiv1 {
+    margin-top: 10px;
+    color: #0f816e;
+}
+
+.newdiv2 {
+    margin-top: 8px;
+    color: #0f816e;
+}
+
+.copyall1 {
+    width: 646px;
+    height: 40px;
+    margin: 0;
+}
+
+.copyall2 {
+    width: 646px;
+    height: 40px;
+    margin: 0;
+}
+
+.themes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+#theme1, #theme2 {
+background-color: #eb9515;
+width: 200px;
+height: 30px;
+margin-right: 10px;
+font-size: 20px;
+}
+
+#theme1:hover {
+    cursor: pointer;
+    background-color: #ca8317;
+}
+
+#theme1:active {
+    cursor: pointer;
+    background-color: #b17316;
+}
+
+#theme2:hover
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:400px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        width: 250px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 250px;
+        margin: 0;
+        height: 420px;
+    }
+
+    h1 {
+        font-family: 'Play', sans-serif;
+        font-size: 50px;
+        margin: 0;
+
+    }
+
+    button {
+        margin: 0;
+        height: 48px;
+        width: 380px;
+        font-size: 24px;
+        border: solid black 1px;
+        background-color: rgb(235, 149, 21);
+        color: rgba(255, 255, 255, 0.979);
+        margin-top: 10px;
+
+    }
+
+    #TLD_field {
+        width: 380px;
+        font-size: 22px;
+        text-align: center;
+        text-transform: lowercase;
+        border: solid black 1px;
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: flex-start;
+        padding: 20px;
+        background-color: rgb(235, 149, 21);
+        color: rgba(255, 255, 255, 0.979);
+        width: 390px;
+        margin: 0;
+    }
+
+    .counter {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        margin: -180px 0 0 0;
+    }
+
+    .new {
+        display: flex;
+        flex-direction: row-reverse;
+        border: solid black 1px;
+        align-items: stretch;
+        justify-content: space-around;
+        padding: 2px;
+        width: 90px;
+        margin-left: 290px;
+    }
+
+    .sorry {
+        color: brown;
+        font-size: 18px;
+        font-family: 'Play', sans-serif;
+        margin-left: 30px;
+        /* margin-top: 300px; */
+        margin-bottom: 55px;
+
+    }
+
+    .output {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 100px;
+        margin-left: 30px;
+        margin-top: 100px;
+    }
+
+    .calculation {
+        font-family: 'Play', sans-serif;
+        font-size: 30px;
+        margin: 0;
+        width: 250px;
+        margin-top: 30px;
+    }
+
+    .result {
+        font-size: 60px;
+        font-family: 'Play', sans-serif;
+        width: 250px;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .result::selection {
+        background-color: rgba(25, 47, 119, 0.384);
+        color: #000;
+    }
+
+    label {
+        margin: 0;
+    }
+}
