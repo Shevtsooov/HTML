@@ -1,0 +1,398 @@
+/* YOUR LOGIN PAGE */
+
+/* Background color */
+.ep-login {
+    background-color: #000;
+}
+
+/* Engagement logo color */
+.ep-avatar__bot--ssls .ep-avatar__bot-head {
+    fill: rgb(131,10,171);
+}
+
+/* Smile color */
+.ep-avatar__bot--ssls .ep-avatar__bot-mouth {
+    fill: #ffffff;
+}
+
+/* Color of the text in the forms */
+.ep-input--inverted .ep-input__label {
+    color: rgb(255, 255, 255);
+}
+
+/* Your input text color */
+.ep-input--inverted .ep-input__field {
+    color: #fff;
+}
+
+/* Color of the forms */
+.ep-input--inverted {
+    border-color: #fff;
+    background: rgb(227,80,17);
+    background: linear-gradient(142deg, rgba(227,80,17,1) 0%, rgba(131,10,171,1) 74%);
+}
+
+/* Change values here in the same way as for forms*/
+.ep-input--inverted .ep-input__label::before {
+    background: rgb(227,80,17);
+    width: max-content;
+}
+
+/* Login button color */
+
+.ep-btn--outline.ep-btn--inverted {
+    border-color: rgb(255, 255, 255);
+    color: #ffffff;
+}
+
+/* Login button when you hover over it */
+
+.ep-btn--outline.ep-btn--inverted:not([disabled]):hover {
+    background: rgb(227,80,17);
+    background: linear-gradient(142deg, rgba(227,80,17,1) 0%, rgba(131,10,171,1) 74%);
+    color: #2f3030;
+}
+
+/* Other text color */
+.ep-login__title {
+    color: #fff;
+}
+
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+:root {
+    /* Колір бекграундів */
+    --color1: rgb(0, 0, 0);
+
+    /* Ліва панель з кнопками та історією чатів, також колір поточного чату */
+    --color2: rgb(41, 39, 39);
+
+    /* Колір активних кнопок лівої панелі, та кнопок відразу над чатом */
+    --color3: #14b08c;
+
+    /* Колір неактиних кнопок лівої панелі, коли над ними мишка */
+    --color4: #0ddac8;
+
+    /* Колір тексту меседжів */
+    --color5: rgb(0, 0, 0);
+
+    /* Фон меседжів клієнта */
+    --color6: rgb(175, 77, 11);
+
+    /* Мій фон меседжів */
+    --color7: rgb(196, 235, 90);
+
+    /* timestamps */
+    --color8: rgb(255, 255, 255);
+}
+
+
+/* ФОН*/
+
+/* Загальний фон */
+body {
+    background-color: var(--color1);
+    color: var(--color6);
+}
+
+
+
+
+
+/* Сама ліва панель з історією чатів */
+.ep-navigation {
+    background-color: var(--color2);
+
+}
+
+/* Активні кнопки зліва */
+.ep-navigation__link.router-link-active {
+    background-color: var(--color3);
+    color: var(--color8);
+}
+
+/* Ховер над кнопками зліва */
+.ep-navigation__link:not(.router-link-active):hover,
+.ep-navigation__link:not(.router-link-active):focus {
+    background-color: var(--color4);
+    color: var(--color8);
+}
+
+
+
+/* HEADER */
+
+/* BROWSER INFO | SOPPURT HISTORY BUTTONS */
+
+.ep-view-more {
+    color: var(--color3);
+}
+
+/* Хедер фон */
+.ep-top-nav {
+    background-color: var(--color1);
+}
+
+/* Кнопка My endgagements - прихована */
+.ep-top-nav__title .ep-btn--ghost.ep-is-active {
+    color: #c4ced2;
+}
+
+/* Кнопка Observing - активна */
+.ep-top-nav__title .ep-btn--ghost {
+    color: var(--color3);
+}
+
+
+
+
+
+/* Головна частина екрану з меседжами */
+
+.ep-panel__content {
+    background-color: rgb(13, 13, 17);
+}
+
+/* BUTTONS ABOVE THE CHAT */
+
+.ep-btn--ghost {
+    color: var(--color3);
+}
+
+/* Текст повідомлень */
+
+.ep-chat-bubble {
+    color: var(--color5);
+}
+
+.ep-content-box {
+    background-color: var(--color1);
+    color: var(--color8);
+}
+
+
+
+
+/* The panel with active and inctive chats */
+
+/* Фон */
+.ep-side-panel {
+    background-color: rgb(12, 13, 32);
+}
+
+.ep-engagement-tab__title {
+    color: var(--color1);
+}
+
+/* Active chat in chat bar */
+.ep-engagement-tab__link.router-link-active,
+.ep-engagement-tab .ep-breadcrumbs.router-link-active {
+    background: rgb(227,80,17);
+    background: linear-gradient(142deg, rgba(227,80,17,1) 0%, rgba(131,10,171,1) 74%);
+}
+
+/* inactive chat border in chat bar */
+.ep-engagement-tab__link,
+.ep-engagement-tab .ep-breadcrumbs {
+    color: var(--color4);
+    margin-top: 10px; 
+}
+.ep-engagement-tab__link:hover,
+.ep-engagement-tab .ep-breadcrumbs:hover {
+    color: var(--color4);
+    margin-top: 10px;
+    background: rgb(82, 82, 81);
+}
+
+/* Дати в лівій панелі з активними чатами */
+.ep-engagement-preview__time {
+    color: #e9eef0;
+}
+/* Іконка клієнта */
+.ep-client-type__icon--customer {
+    color: #fff;
+}
+/* Превью останнього меседжу в чаті */
+.ep-engagement-preview__message-content {
+    color: #2fa0d8;
+}
+/* Copy button color when visible */
+.ep-copy-clipboard--sm.ep-is-visible {
+    opacity: 1;
+    color: var(--color8);
+}
+/* Clients previous chats button */
+
+.ep-engagement-preview__button {
+    border-color: #ffffff;
+    background-color: transparent;
+    color: #fdfdfd;
+}
+.ep-engagement-preview__button:hover {
+    border-color: #9fa3a1;
+    background-color: transparent;
+    color: #9fa3a1;
+}
+
+/* Text - Your pinned engagements will appear here. */
+.ep-engagement-tab__placeholder {
+    color: #b08d03;
+}
+.ep-engagement-tab__placeholder-figure-img {
+    filter: invert(6%) sepia(81%) saturate(5919%) hue-rotate(291deg) brightness(109%) contrast(120%);
+}
+
+
+
+/* CHAT CONTAINER */
+
+/* Client messages */
+.ep-chat-bubble {
+    background: rgb(191,213,5);
+    background: linear-gradient(142deg, rgba(191,213,5,1) 0%, rgba(227,80,17,1) 81%);
+    color: var(--color8);
+}
+
+/* CSR messages */
+.ep-chat-bubble--inverted {
+    background: rgb(227,80,17);
+    background: linear-gradient(142deg, rgba(227,80,17,1) 0%, rgba(131,10,171,1) 74%);
+    color: var(--color8);
+}
+
+/* Links in the messages */
+.ep-custom-link {
+    color: #d3d3d3;
+}
+.ep-custom-link:hover {
+    color: #07065c;
+}
+
+/* Message timestamps */
+.ep-timestamp {
+    color: var(--color8);
+    font-size: 10px;
+}
+
+/* To whom the chat was assigned */
+a {
+    color: var(--color4);
+}
+
+/* Typebox color */
+.ep-typebox {
+    background-color: rgb(51, 51, 54);
+    color: #fff;
+}
+.ep-typebox__input {
+    color: #feffff;
+}
+
+/* Attachment clip color */
+.ep-file-uploader__label {
+    color: rgb(10, 156, 182);
+}
+.ep-file-uploader__label:not(.ep-is-disabled):hover, .ep-file-uploader__label:not(.ep-is-disabled):focus {
+    color: rgba(10, 156, 182, 0.836);
+}
+
+/* Tansfer window */
+.ep-transfer-footer {
+    background-color: #000000;
+}
+.ep-transfer-footer__message-textarea {
+    color: #ffffff;
+}
+
+
+
+
+
+/* new chat window accept/decline */
+
+.ep-notification-card {
+    background-color: rgb(12, 13, 32);
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+/* USER NAVIGATION MENU */
+.ep-dropdown__holder {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 24px rgba(47, 48, 48, 0.18);
+    will-change: opacity, transform;
+    z-index: 100;
+}
+/* buttons when hover */
+.ep-user-menu__item:hover, .ep-user-menu__item:focus, .ep-user-menu__item.ep-is-selected {
+    background-color: #252727;
+}
+/* text color */
+.ep-user-menu__item {
+    color: #eef2f2;
+}
+/* status */
+.ep-input {
+    border: 2px solid #000000;
+    border-radius: 6px;
+    background-color: #000;
+}
+/* shift role text*/
+.ep-input__label {
+    color: #fff;
+}
+.ep-input__label::before {
+    background-color: #000;
+}
+
+/* Shift role dropdown */
+.ep-select__list {
+    background-color: #000405;
+}
+.ep-select__option {
+    color: #ffffff;
+}
+.ep-select__option:not([disabled]):hover {
+    background-color: #1b1c1d;
+}
+.ep-select__option {
+    color: #0b8260;
+}
+.ep-select__option.ep-is-selected:not(.ep-is-multiple) {
+    background-color: rgb(227,80,17);
+    color: #fff;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+/* Технічні моменти: візуальне видалення деяких непотрібних елементів */
+
+.ep-btn[disabled] {
+    cursor: not-allowed;
+    opacity: 0;
+}
+
+/* palka - */
+.ep-engagement-tab__link::before,
+.ep-engagement-tab .ep-breadcrumbs::before {
+    opacity: 0;
+}
+
+.ep-top-nav__title .ep-btn--ghost.ep-is-active::before {
+   opacity: 0;
+}
+
+/* hide hide-button of the right menu */
+.ep-side-panel__trigger {
+    background-color: var(--color3);
+    opacity: 0;
+}
